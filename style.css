@@ -1,0 +1,86 @@
+header {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    /* background: rgba(0, 0, 0, .6); */
+    z-index: 5;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: right;
+    z-index: 5;
+}
+
+header nav ul li {
+    color: #fff;
+    margin: 0 20px;
+    list-style: none;
+}
+
+#myVideo {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    /* right: 0; */
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+    background-color: black;
+    background-position: center center;
+    background-size: contain;
+    object-fit: cover;
+    z-index: 3;
+}
+
+.maintitle {
+    text-align: center;
+    position: absolute;
+    z-index: 4;
+    width: 100%;
+    left: 0;
+    top: 43%;
+    -webkit-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    text-shadow: 3px, 3px, 3px, black;
+}
+
+h1 {
+    /* background-color: aquamarine; */
+    font-size: 5em;
+    font-family: arial, helvetica;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #fff;
+}
+
+a:hover {
+    font-size: 18px;
+    color: red;
+    font-weight: bold;
+}
+
+.face {
+    left: auto;
+    position: relative;
+    z-index: -1;
+}
+
+body {
+    background-color: black;
+    position: relative;
+    background-image: url(./img/door.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center bottom;
+}

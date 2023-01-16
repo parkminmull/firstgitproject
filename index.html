@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>the shining offical site</title>
+    <link rel="stylesheet" type="text/css" href="fullpage.css">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="fullpage.js"></script>
+</head>
+
+<body>
+    <header>
+        <!-- <img src="./img/1600px-The_Shining_movie_logo.png" width="250px" alt="the shining"> -->
+        <nav>
+            <ul id="myMenu">
+                <li data-menuanchor="firstPage" class="active"><a href="#firstPage">HOME</a></li>
+                <li data-menuanchor="secondPage"><a href="#secondPage">SYNOPSIS</a></li>
+                <li data-menuanchor="thirdPage"><a href="#thirdPage">CAST</a></li>
+                <li data-menuanchor="fourthPage"><a href="#fourthPage">GALLERY</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="fullpage">
+        <div class="section">
+            <video id="myVideo" loop muted data-autoplay>
+			<source src="./img/maintrailer.mp4" type="video/mp4">
+		    </video>
+            <div class="maintitle">
+                <h1>THE SHiNiNG</h1>
+            </div>
+        </div>
+        <div class="section"><img src="./img/face.png" alt="" class="face"></div>
+        <div class="section">cast</div>
+        <div class="section">trailer</div>
+        <div class="section">gallery</div>
+        <div class="section5 fp-auto-height">footer</div>
+    </div>
+
+    <script>
+        new fullpage('#fullpage', {
+            // 이동
+            menu: '#mymenu',
+            lockAnchors: false,
+            anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'lastPage'],
+            navigation: true,
+            navigationPosition: 'right',
+            navigationTooltips: ['home', 'synopsis', 'cast', 'trailer', 'gallery', 'footer'],
+            showActiveTooltip: true,
+
+        });
+    </script>
+</body>
+
+</html>
