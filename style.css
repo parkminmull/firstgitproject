@@ -69,16 +69,36 @@ a:hover {
     font-weight: bold;
 }
 
+.door {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    /* right: 0; */
+    width: 100%;
+    height: 100%;
+    background-size: 100%;
+    /* background-color: black; */
+    background-position: center;
+    background-size: contain;
+    object-fit: cover;
+    z-index: 3;
+    background-attachment: fixed;
+}
+
 .face {
-    left: auto;
-    position: relative;
+    height: 100%;
+    /* left: auto; */
+    position: absolute;
+    left: 0px;
+    top: 0;
     z-index: -1;
 }
 
 body {
     background-color: black;
     position: relative;
-    background-image: url(./img/door.png);
+    /* background-image: url(./img/door.png); */
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
