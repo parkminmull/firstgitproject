@@ -9,6 +9,8 @@
     <link rel="stylesheet" type="text/css" href="fullpage.css">
     <link rel="stylesheet" href="style.css">
     <script type="text/javascript" src="fullpage.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+    
 </head>
 
 <body>
@@ -35,10 +37,11 @@
         <div class="section">
             <img src="./img/door.png" class="door" alt=""><img src="./img/face.png" alt="" class="face">
         </div>
-        <div class="section">cast</div>
+        <div class="section"><img src="./img/girl.png" alt="" class="girl"><img src="./img/door2.png" class="door2" alt="">
+            </div>
         <div class="section">trailer</div>
         <div class="section">gallery</div>
-        <div class="section5 fp-auto-height">footer</div>
+        <div class="section fp-auto-height">footer</div>
     </div>
 
     <script>
@@ -46,14 +49,16 @@
             // 이동
             menu: '#mymenu',
             lockAnchors: false,
-            anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'lastPage'],
+            anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage'],
             navigation: true,
             navigationPosition: 'right',
-            navigationTooltips: ['home', 'synopsis', 'cast', 'trailer', 'gallery', 'footer'],
+            navigationTooltips: ['home', 'synopsis', 'cast', 'gallery', 'footer'],
             showActiveTooltip: true,
-
+            
+        
         });
     </script>
+    <script src="/main.js"></script>
 </body>
 
 </html>

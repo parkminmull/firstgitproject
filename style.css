@@ -19,6 +19,16 @@ header nav ul li {
     list-style: none;
 }
 
+body {
+    background-color: black;
+    position: relative;
+    /* background-image: url(./img/door.png); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center bottom;
+}
+
 #myVideo {
     position: absolute;
     right: 0;
@@ -70,6 +80,7 @@ a:hover {
 }
 
 .door {
+    /* position: fixed; */
     position: absolute;
     right: 0;
     bottom: 0;
@@ -82,7 +93,25 @@ a:hover {
     background-position: center;
     background-size: contain;
     object-fit: cover;
-    z-index: 3;
+    z-index: 2;
+    background-attachment: fixed;
+}
+
+.door2 {
+    /* position: fixed; */
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    /* right: 0; */
+    width: 100%;
+    height: 100%;
+    background-size: 100%;
+    /* background-color: black; */
+    background-position: center;
+    background-size: contain;
+    object-fit: cover;
+    z-index: 2;
     background-attachment: fixed;
 }
 
@@ -90,17 +119,30 @@ a:hover {
     height: 100%;
     /* left: auto; */
     position: absolute;
-    left: 0px;
-    top: 0;
+    left: 0%;
+    top: 0%;
+    transition: 1.5s;
     z-index: -1;
+    animation: slide 1s;
 }
 
-body {
-    background-color: black;
-    position: relative;
-    /* background-image: url(./img/door.png); */
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center bottom;
+@keyframes slide {
+    from {
+        left: -500px;
+        opacity: 0;
+    }
+    to {
+        left: 295px;
+        opacity: 1;
+    }
+}
+
+.girl {
+    width: 100%;
+    height: 100%;
+    /* left: auto; */
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    z-index: -1;
 }
